@@ -28,8 +28,9 @@
 
 .w3l-banner-main .navbar-nav .nav-link {
     padding: 0.6em 1.4em 0.4em 1.4em !important;
-    color: #020202;
+    color: black;
     background: transparent;
+    background-color:lightgrey;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
@@ -72,6 +73,7 @@ h1 span {
 h2 {
     padding-top: .4em;
     padding-bottom: .5em;
+    text-align:center;
 }
 
 .text-primary {
@@ -139,3 +141,111 @@ div .pdf a{
     float:right;
 
 }
+
+
+
+ul{
+    margin-top: 0;
+    margin-bottom: 0rem;
+    padding: 0;
+    margin-left:1em;
+}
+
+.w3l-customers-6 .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 0px;
+    position: inherit;
+    z-index: 9;
+    left: -5px;
+    /* right: 0; */
+    bottom: 0px;
+
+}
+
+.w3l-customers-6 .owl-theme .owl-dots,
+.w3l-customers-6 .owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: 20px;
+}
+
+.w3l-customers-6 .owl-carousel,
+.w3l-customers-6 .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    align-content:center;
+}
+
+
+/************************Button styling******************************/
+button {
+    border-radius: 0;
+}
+
+    button:focus {
+        outline: 1px dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+    }
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+select {
+    word-wrap: normal;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+    button:not(:disabled),
+    [type="button"]:not(:disabled),
+    [type="reset"]:not(:disabled),
+    [type="submit"]:not(:disabled) {
+        cursor: pointer;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+        padding: 0;
+        border-style: none;
+    }
+
+.w3l-banner-main .navbar-toggler {
+    padding: 0.4rem 0.4rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: lightgrey;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: black;
+}
+
+.w3l-banner-main span.navbar-toggler-icon.fa.fa-bars {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/***********END Of Button Styling***********************/

@@ -213,7 +213,7 @@ span.red-color {
 .fa-ul {
   padding-left: 0;
   margin-left: 2.14286em;
-  list-style-type: none;
+  /*list-style-type: none;*/
 }
 
 .fa-ul>li {
@@ -16127,7 +16127,7 @@ button.bg-dark:focus {
 
 .mb-0,
 .my-0 {
-  margin-bottom: 0 !important;
+  /*margin-bottom: 0 !important;*/
 }
 
 .ml-0,
