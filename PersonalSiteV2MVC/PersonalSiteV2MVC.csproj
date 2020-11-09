@@ -260,6 +260,7 @@
     <Content Include="Views\Home\Projects.cshtml" />
     <Content Include="Views\Home\Links.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\EmailConfirmation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

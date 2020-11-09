@@ -249,3 +249,11 @@ button,
 }
 
 /***********END Of Button Styling***********************/
+
+/*Styling for text area*/
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+/*END of text area Styling*/
