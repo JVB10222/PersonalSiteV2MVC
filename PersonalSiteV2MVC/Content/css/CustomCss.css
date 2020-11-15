@@ -70,6 +70,12 @@ h1 span {
     color: #E9C95A;
 }
 
+h3,
+.h3 {
+    font-size: 1.75rem;
+    padding-top: .8em;
+}
+
 h2 {
     padding-top: .4em;
     padding-bottom: .5em;
@@ -257,3 +263,21 @@ textarea {
 }
 
 /*END of text area Styling*/
+
+/*Icons styling */
+.w3l-footer-16 .share-icons-footer a {
+    font-size: 30px;
+    line-height: 1;
+    color: #233142;
+    margin-left: 15px;
+}
+
+    .w3l-footer-16 .share-icons-footer a span.fa {
+        color: #233142;
+    }
+
+    .w3l-footer-16 .share-icons-footer a:hover span.fa {
+        transition: 0.3s ease;
+        color: #4f9da6;
+    }
+/*END of Icons styling */
