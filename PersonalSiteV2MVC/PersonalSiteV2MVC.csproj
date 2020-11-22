@@ -142,6 +142,7 @@
     <Content Include="Content\images\banner3.jpg" />
     <Content Include="Content\images\bannerMain.jpg" />
     <Content Include="Content\images\clients.jpg" />
+    <Content Include="Content\images\CSFundamentals.png" />
     <Content Include="Content\images\dots.png" />
     <Content Include="Content\images\g1.jpg" />
     <Content Include="Content\images\g2.jpg" />
