@@ -59,7 +59,9 @@ namespace PersonalSiteV2MVC.Controllers
 
             mm.ReplyToList.Add(cvm.Email);
 
-            
+            SmtpClient client = new SmtpClient("mail.jvbdev.com");
+
+            client.Credentials = new NetworkCredential("admin@jvbdev.com", "!Jvb1032535");
 
             client.Port = 8889;
 

@@ -144,6 +144,7 @@
     <Content Include="Content\images\clients.jpg" />
     <Content Include="Content\images\CSFundamentals.png" />
     <Content Include="Content\images\dots.png" />
+    <Content Include="Content\images\fsdp.png" />
     <Content Include="Content\images\g1.jpg" />
     <Content Include="Content\images\g2.jpg" />
     <Content Include="Content\images\g3.jpg" />
