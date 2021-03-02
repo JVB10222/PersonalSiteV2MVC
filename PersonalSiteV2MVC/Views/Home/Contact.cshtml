@@ -45,9 +45,17 @@
             </div>
         </div>
 
+        
+
+
         <div class="row form-group">
             <div class="offset-md-10 col-md-2 text-right">
-                <input type="submit" value="Send" class="btn btn-dark" />
+                <div class="g-recaptcha"
+                        data-sitekey="6Lfr1G0aAAAAAM3dmwSULY0-djFRL4Y11IHJ6HfA"
+                        data-callback='onSubmit'
+                        data-action='submit'>
+                    <input type="submit" value="Send" class="btn btn-dark" />
+                </div>
             </div>
         </div>
     </div>
@@ -64,4 +72,11 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script>
+
 }
