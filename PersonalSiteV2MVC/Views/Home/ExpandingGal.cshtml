@@ -1,0 +1,121 @@
+﻿
+@section Styles{
+    <style>
+        @@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            width: 90vw;
+        }
+
+        body {
+            
+        }
+
+        .panel {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 80vh;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            flex: 0.5;
+            margin: 15px;
+            padding-right: 15px;
+            position: relative;
+            transition: flex 0.7s ease-in;
+        }
+
+            .panel h3 {
+                font-size: 24px;
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+                margin: 0;
+                opacity: 0;
+            }
+
+            .panel.active {
+                flex: 5;
+                transition: opacity 0.3s ease-in 0.4s;
+            }
+
+                .panel.active h3 {
+                    opacity: 1;
+                }
+
+        @@media(max-width: 480px) {
+            .container {
+                width: 100vw;
+            }
+
+            .panel:nth-of-type(4), .panel:nth-of-type(5) {
+                display: none;
+            }
+        }
+
+        #grad {
+            background-image: linear-gradient(to bottom right, blue,teal, pink);
+            font-family: 'Muli', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            border-radius: 50px;
+        }
+    </style>
+}
+
+<section id="grad">
+
+    <div class="container">
+        <div class="panel active"
+             style="background-image: url('https://images.unsplash.com/photo-1525871685609-48be2dbd54f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+            <h3>Great Things</h3>
+        </div>
+        <div class="panel"
+             style="background-image: url('https://images.unsplash.com/photo-1605296867424-35fc25c9212a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+            <h3>Come from </h3>
+        </div>
+        <div class="panel"
+             style="background-image: url('https://images.unsplash.com/photo-1498447149333-889a74a29155?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+            <h3>Hard work</h3>
+        </div>
+        <div class="panel"
+             style="background-image: url('https://images.unsplash.com/photo-1506534067239-9e2fabb3a863?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+            <h3>And perserverance</h3>
+        </div>
+        <div class="panel"
+             style="background-image: url('https://images.unsplash.com/photo-1543357480-c60d40007a3f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80')">
+            <h3>No Execuses</h3>
+        </div>
+    </div>
+</section>
+
+<script>
+
+    const panels = document.querySelectorAll('.panel')
+
+    panels.forEach((panel) => {
+        panel.addEventListener('click', () => {
+            removeActiveClasses()
+            panel.classList.add('active')
+        })
+    })
+
+    function removeActiveClasses() {
+        panels.forEach((panel) => {
+            panel.classList.remove('active')
+        })
+    }
+</script>
+

@@ -1,5 +1,7 @@
 ﻿
 @{
+    /**/
+
     ViewBag.Title = "Projects";
 }
 
@@ -25,9 +27,12 @@
                 <li class="cat-item-2">
                     <a href="#" title="Category 2">Full-Stack</a>
                 </li>
-                @*<li class="cat-item-3">
-                        <a href="#" title="Category 3">Creative</a>
-                    </li>*@
+                <li class="cat-item-3">
+                    <a href="#" title="Category 3">HTML/CSS/JS</a>
+                </li>
+                <li class="cat-item-4">
+                    <a href="#" title="Category 3">Design</a>
+                </li>
 
             </ul>
             <ul class="portfolio-area clearfix p-0 m-0 row">
@@ -76,23 +81,22 @@
                             </div>
                         </a>
                     </div>
-
-
                 </li>
-                @*
-                    <li class="portfolio-item2 content" data-id="id-4" data-type="cat-item-2">
-                            <div class="image-block">
 
-                                <a class="image-zoom" href="~/Content/images/g4.jpg" data-gal="prettyPhoto[gallery]">
-                                    <div class="content-overlay"></div>
-                                    <img src="~/Content/images/g4.jpg" class="img-fluid" alt="portfolio-img">
-                                    <div class="content-details fadeIn-bottom">
-                                        <h3 class="content-title">Add Your Title</h3>
+                <li class="portfolio-item2 content" data-id="id-4" data-type="cat-item-3">
+                    <div class="image-block">
 
-                                    </div>
-                                </a>
+                        <a class="image-zoom" href="~/Content/images/gal1.jpg" data-gal="prettyPhoto[gallery]">
+                            <div class="content-overlay"></div>
+                            <img src="~/Content/images/gal1.jpg" class="img-fluid" alt="portfolio-img">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Expanding Photo Gallery</h3>
+                                <a href="@Url.Action("ExpandingGal","Home")" class="btn btn-primary">Demo</a>
+
                             </div>
-                        </li>*@
+                        </a>
+                    </div>
+                </li>
 
 
             </ul>

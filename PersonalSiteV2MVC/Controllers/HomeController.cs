@@ -36,6 +36,11 @@ namespace PersonalSiteV2MVC.Controllers
             return View();
         }
 
+        public ActionResult ExpandingGal()
+        {
+            return View();
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Contact(ContactViewModel cvm)
